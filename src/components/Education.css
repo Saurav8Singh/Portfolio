@@ -1,0 +1,62 @@
+.education-section { background: var(--off); }
+
+.edu-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.edu-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.3rem 1.7rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.edu-card:hover {
+  border-color: rgba(200,169,81,0.4);
+  transform: translateX(4px);
+}
+
+.edu-degree {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.edu-inst {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 3px;
+  font-weight: 400;
+}
+.edu-year {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  white-space: nowrap;
+  text-align: right;
+}
+
+.cert-section { margin-top: 3rem; }
+.cert-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 1.2rem;
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .edu-card { grid-template-columns: 1fr; }
+  .edu-year { text-align: left; }
+}
