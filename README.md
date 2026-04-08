@@ -104,3 +104,4 @@ portfolio/
 All personal data lives in **`src/data/index.js`** — edit your name, bio, experience, projects, education, and skills there. No need to touch component files.
 
 To update project GitHub/Live links, edit the `liveUrl` and `githubUrl` fields in `src/data/index.js`.
+# portfolio
